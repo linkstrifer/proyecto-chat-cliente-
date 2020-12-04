@@ -1,0 +1,194 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+body {
+  margin: 0;
+
+} 
+
+.slack { 
+  display: grid;
+  background-color: #19171D;
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh
+}
+h2 {
+  color: whitesmoke;
+  position: fixed;
+  font-size: 20px;
+  font-family:Content-font, Roboto, sans-serif;
+  padding:  5px;
+  margin: 10px;
+}
+
+.canales {
+  color: #eae9eb;
+  display : flex;
+  flex-direction: column;
+  justify-content: flex-end;  
+  position: fixed;
+  font-family: Content-font, Roboto, sans-serif;
+  
+  padding: 0.5em;
+  padding-inline-start: 0 ;
+  margin-left: 20px;
+  margin-top: 60px; 
+  border-left: 50px;
+   
+} 
+
+.canales li:hover {
+  background-color: #757477;
+}
+
+.activo {
+  background-color: #1164A3;
+  margin-bottom: 5px;
+}
+
+.c2 { 
+  margin-bottom: 5px;
+  padding: 0;
+  
+}
+
+ul {
+  list-style: none;
+  font-size: 15px;
+  color: #757477;
+  font-family: Content-font, Roboto, sans-serif
+}
+  
+
+.cajamensajes {
+
+  display: flex;
+  height: 50px;
+  width: auto;
+  margin: 20px;
+     
+}
+.chat {
+  overflow-y: scroll;
+  height:;
+  width: auto;
+}
+
+.imagperfil {
+  border-radius: 5px;
+  display: inline;
+  margin: 0,5px;
+}
+
+.nombre {
+  color: #ffffff;
+  font-size: 14px;
+  display: inline;
+ 
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+.time-right{
+  
+  font-size: 10px;
+  display: inline;
+}
+
+.texto{
+  display: block;
+  font-family: Content-font, Roboto, sans-serif;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 10px;
+ 
+}
+
+.mensajes {
+  color: #ffffff;
+  background-color: #1a1d21;
+  font-family: Content-font, Roboto, sans-serif;
+  grid-column: 2 / span 3;
+  border-left: 1px solid #2f2f30;
+  display : flex;
+  flex-direction: column;
+  justify-content: flex-end;  
+ 
+}
+
+.escribeaqui {
+  border: 1px solid #757477;
+  border-radius: 3px;
+  width: 100;
+  height: 34Px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 6px;
+  
+}
+
+.input {
+  border: 0px;
+  background-color: transparent;
+  color: whitesmoke;
+  font-style: unset; 
+  font-size: 15px;
+  height: 100%;
+  width: 96%;
+  padding: 0px 0px 0px 0px ;
+  outline: none;
+  margin-bottom: 0;
+  
+ 
+}
+
+.enviar {
+  border:0;
+  background-color: #222529;
+  font-family:Content-font, Roboto, sans-serif;
+  color: whitesmoke;
+  height: 100%;
+  width: 30px;
+  display: flex;
+  align-items: center;
+ 
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
