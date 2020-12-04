@@ -2,11 +2,13 @@ import { useState } from "react";
 
 import { API } from  "./constants";
 
-function Compose({onSuccess}) {
+function Compose({}) {
     const [value, setValue] = useState ('');
     
     return (
-    <form 
+   
+   
+    <form className="form"
     onSubmit={(event) => {
         event.preventDefault();
     
@@ -22,17 +24,20 @@ function Compose({onSuccess}) {
                 }),
             })
             .then(()=> {
-                onSuccess();
                 setValue('')
             })
             .catch((error) => console.error(error));
         }        
     }}
     > 
-        <input  value= {value} onChange={(event) => setValue(event.
-            target.value)}/>
-        <button className="enviar"> Enviar</button>
+        <input 
+        className="input" 
+        placeholder = "Escribe tu mensaje aqui" 
+        value= {value} onChange={(event) => setValue(event.target.value)}/>
+        <button className="boton">Enviar</button>
         </form>
+       
+      
    
     )
     

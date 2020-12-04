@@ -1,6 +1,6 @@
 function Messages({ messages }) {
     return (
-    <ul>
+    <ul >
     {messages.map(({ text , user, _id}) => (
     <li> key{_id} {`${user}: ${text}`}</li>
     ))}
