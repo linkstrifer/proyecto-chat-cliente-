@@ -36,9 +36,7 @@ function loadMessages () {
     return (
         <div className="mensajes">
             <Messages messages={messages}/>
-            <Compose 
-
-         /> 
+            <Compose  /> 
         </div>
      );
 }

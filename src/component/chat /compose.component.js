@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { API } from  "./constants";
 
-function Compose({}) {
+function Compose() {
     const [value, setValue] = useState ('');
     
     return (
