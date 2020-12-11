@@ -1,6 +1,6 @@
 import "./App.css";
 
-import Chat from "./component/chat1";
+import Chat from "./component/chat";
 
 function App() {
   return (
